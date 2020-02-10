@@ -1,4 +1,4 @@
-framework module Pods_BalancedEx {
+module Pods_BalancedEx {
   umbrella header "Pods-BalancedEx-umbrella.h"
 
   export *
