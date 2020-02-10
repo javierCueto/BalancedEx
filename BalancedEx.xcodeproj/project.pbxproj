@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		CFBC9CC223EE7087002855F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFBC9CC123EE7087002855F5 /* Assets.xcassets */; };
 		CFBC9CC523EE7087002855F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFBC9CC423EE7087002855F5 /* Preview Assets.xcassets */; };
 		CFBC9CC823EE7087002855F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFBC9CC623EE7087002855F5 /* LaunchScreen.storyboard */; };
+		CFF3C6E923F0C385003D1D66 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3C6E823F0C385003D1D66 /* Person.swift */; };
+		CFF3C6EB23F0CB6F003D1D66 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3C6EA23F0CB6F003D1D66 /* Plan.swift */; };
+		CFF3C6ED23F0CB85003D1D66 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3C6EC23F0CB85003D1D66 /* Expense.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		CFBC9CC423EE7087002855F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CFBC9CC723EE7087002855F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFBC9CC923EE7087002855F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFF3C6E823F0C385003D1D66 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		CFF3C6EA23F0CB6F003D1D66 /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
+		CFF3C6EC23F0CB85003D1D66 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		D732D09E810A1404DBA60138 /* Pods-BalancedEx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalancedEx.release.xcconfig"; path = "Target Support Files/Pods-BalancedEx/Pods-BalancedEx.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +77,7 @@
 		CFBC9CBA23EE7086002855F5 /* BalancedEx */ = {
 			isa = PBXGroup;
 			children = (
+				CFF3C6E723F0C32A003D1D66 /* Model */,
 				CFBC9CBB23EE7086002855F5 /* AppDelegate.swift */,
 				CFBC9CBD23EE7086002855F5 /* SceneDelegate.swift */,
 				CFBC9CBF23EE7086002855F5 /* ContentView.swift */,
@@ -90,13 +97,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CFF3C6E723F0C32A003D1D66 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CFF3C6E823F0C385003D1D66 /* Person.swift */,
+				CFF3C6EA23F0CB6F003D1D66 /* Plan.swift */,
+				CFF3C6EC23F0CB85003D1D66 /* Expense.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E5148568771A477C765FA674 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				8E468E10CBBC41D0CCD597EE /* Pods-BalancedEx.debug.xcconfig */,
 				D732D09E810A1404DBA60138 /* Pods-BalancedEx.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -215,9 +231,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFF3C6ED23F0CB85003D1D66 /* Expense.swift in Sources */,
 				CFBC9CBC23EE7086002855F5 /* AppDelegate.swift in Sources */,
 				CFBC9CBE23EE7086002855F5 /* SceneDelegate.swift in Sources */,
+				CFF3C6E923F0C385003D1D66 /* Person.swift in Sources */,
 				CFBC9CC023EE7086002855F5 /* ContentView.swift in Sources */,
+				CFF3C6EB23F0CB6F003D1D66 /* Plan.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
