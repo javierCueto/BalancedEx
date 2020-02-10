@@ -15,7 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
+         print(Realm.Configuration.defaultConfiguration.fileURL)
+        /*
         let config = Realm.Configuration(
             // Set the new schema version. This must be greater than the previously used
             // version (if you've never set a schema version before, the version is 0).
@@ -36,10 +37,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Realm.Configuration.defaultConfiguration = config
         // cmd + shif + g = to show the url /Users/jjcueto/Library/Developer/CoreSimulator/Devices/586D248F-B2ED-47EC-BE58-66780B388996/data/Containers/Data/Application/9D2F7B73-B1F2-4919-B893-A7772AEC0664/Documents/default.realm
         
-        //print(Realm.Configuration.defaultConfiguration.fileURL)
+     
         
         
-        /*let person = Person()
+        let person = Person()
         person.name = "javier3"
         person.createdAt = Date()
         
@@ -68,9 +69,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("error con Realm \(error)")
         }
         
-       */
+       
         ////////////////////////////////////////
-        
+        */
         
         return true
     }

@@ -7,25 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		133B6A25B725C927B5B7160C /* Pods_BalancedEx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEB3CF5FD7BB0DBB53795B3 /* Pods_BalancedEx.framework */; };
+		CF01BB8823F0F84700423653 /* Pods_BalancedEx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF01BB8723F0F84700423653 /* Pods_BalancedEx.framework */; };
+		CF01BB8923F0F84700423653 /* Pods_BalancedEx.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF01BB8723F0F84700423653 /* Pods_BalancedEx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CFBC9CBC23EE7086002855F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBC9CBB23EE7086002855F5 /* AppDelegate.swift */; };
 		CFBC9CBE23EE7086002855F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBC9CBD23EE7086002855F5 /* SceneDelegate.swift */; };
-		CFBC9CC023EE7086002855F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBC9CBF23EE7086002855F5 /* ContentView.swift */; };
+		CFBC9CC023EE7086002855F5 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBC9CBF23EE7086002855F5 /* Main.swift */; };
 		CFBC9CC223EE7087002855F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFBC9CC123EE7087002855F5 /* Assets.xcassets */; };
 		CFBC9CC523EE7087002855F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFBC9CC423EE7087002855F5 /* Preview Assets.xcassets */; };
 		CFBC9CC823EE7087002855F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFBC9CC623EE7087002855F5 /* LaunchScreen.storyboard */; };
 		CFF3C6E923F0C385003D1D66 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3C6E823F0C385003D1D66 /* Person.swift */; };
 		CFF3C6EB23F0CB6F003D1D66 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3C6EA23F0CB6F003D1D66 /* Plan.swift */; };
 		CFF3C6ED23F0CB85003D1D66 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3C6EC23F0CB85003D1D66 /* Expense.swift */; };
+		CFF3C6F223F0DB25003D1D66 /* PlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3C6F123F0DB25003D1D66 /* PlanView.swift */; };
+		CFF3C6F423F0DE2A003D1D66 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3C6F323F0DE2A003D1D66 /* People.swift */; };
+		CFF3C6F623F0DECA003D1D66 /* ExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3C6F523F0DECA003D1D66 /* ExpensesView.swift */; };
+		CFF3C6F823F0DEF3003D1D66 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3C6F723F0DEF3003D1D66 /* SummaryView.swift */; };
+		CFF3C6F923F0E52E003D1D66 /* Pods_BalancedEx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEB3CF5FD7BB0DBB53795B3 /* Pods_BalancedEx.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF01BB8A23F0F84700423653 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CF01BB8923F0F84700423653 /* Pods_BalancedEx.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8E468E10CBBC41D0CCD597EE /* Pods-BalancedEx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalancedEx.debug.xcconfig"; path = "Target Support Files/Pods-BalancedEx/Pods-BalancedEx.debug.xcconfig"; sourceTree = "<group>"; };
 		9EEB3CF5FD7BB0DBB53795B3 /* Pods_BalancedEx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BalancedEx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF01BB8023F0F7F700423653 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF01BB8423F0F7FC00423653 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF01BB8723F0F84700423653 /* Pods_BalancedEx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_BalancedEx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFBC9CB823EE7086002855F5 /* BalancedEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalancedEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFBC9CBB23EE7086002855F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFBC9CBD23EE7086002855F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CFBC9CBF23EE7086002855F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CFBC9CBF23EE7086002855F5 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		CFBC9CC123EE7087002855F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFBC9CC423EE7087002855F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CFBC9CC723EE7087002855F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -33,6 +56,10 @@
 		CFF3C6E823F0C385003D1D66 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		CFF3C6EA23F0CB6F003D1D66 /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
 		CFF3C6EC23F0CB85003D1D66 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		CFF3C6F123F0DB25003D1D66 /* PlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanView.swift; sourceTree = "<group>"; };
+		CFF3C6F323F0DE2A003D1D66 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		CFF3C6F523F0DECA003D1D66 /* ExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesView.swift; sourceTree = "<group>"; };
+		CFF3C6F723F0DEF3003D1D66 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
 		D732D09E810A1404DBA60138 /* Pods-BalancedEx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalancedEx.release.xcconfig"; path = "Target Support Files/Pods-BalancedEx/Pods-BalancedEx.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,7 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				133B6A25B725C927B5B7160C /* Pods_BalancedEx.framework in Frameworks */,
+				CFF3C6F923F0E52E003D1D66 /* Pods_BalancedEx.framework in Frameworks */,
+				CF01BB8823F0F84700423653 /* Pods_BalancedEx.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +79,9 @@
 		B89CD1FDD0925C20F939DD4D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CF01BB8723F0F84700423653 /* Pods_BalancedEx.framework */,
+				CF01BB8423F0F7FC00423653 /* RealmSwift.framework */,
+				CF01BB8023F0F7F700423653 /* Realm.framework */,
 				9EEB3CF5FD7BB0DBB53795B3 /* Pods_BalancedEx.framework */,
 			);
 			name = Frameworks;
@@ -77,10 +108,10 @@
 		CFBC9CBA23EE7086002855F5 /* BalancedEx */ = {
 			isa = PBXGroup;
 			children = (
+				CFF3C6EE23F0D6C0003D1D66 /* View */,
 				CFF3C6E723F0C32A003D1D66 /* Model */,
 				CFBC9CBB23EE7086002855F5 /* AppDelegate.swift */,
 				CFBC9CBD23EE7086002855F5 /* SceneDelegate.swift */,
-				CFBC9CBF23EE7086002855F5 /* ContentView.swift */,
 				CFBC9CC123EE7087002855F5 /* Assets.xcassets */,
 				CFBC9CC623EE7087002855F5 /* LaunchScreen.storyboard */,
 				CFBC9CC923EE7087002855F5 /* Info.plist */,
@@ -107,6 +138,18 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		CFF3C6EE23F0D6C0003D1D66 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFF3C6F123F0DB25003D1D66 /* PlanView.swift */,
+				CFBC9CBF23EE7086002855F5 /* Main.swift */,
+				CFF3C6F323F0DE2A003D1D66 /* People.swift */,
+				CFF3C6F523F0DECA003D1D66 /* ExpensesView.swift */,
+				CFF3C6F723F0DEF3003D1D66 /* SummaryView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E5148568771A477C765FA674 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +171,7 @@
 				CFBC9CB523EE7086002855F5 /* Frameworks */,
 				CFBC9CB623EE7086002855F5 /* Resources */,
 				4A1B93011250799A73B8FE42 /* [CP] Embed Pods Frameworks */,
+				CF01BB8A23F0F84700423653 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,9 +277,13 @@
 			files = (
 				CFF3C6ED23F0CB85003D1D66 /* Expense.swift in Sources */,
 				CFBC9CBC23EE7086002855F5 /* AppDelegate.swift in Sources */,
+				CFF3C6F223F0DB25003D1D66 /* PlanView.swift in Sources */,
+				CFF3C6F423F0DE2A003D1D66 /* People.swift in Sources */,
 				CFBC9CBE23EE7086002855F5 /* SceneDelegate.swift in Sources */,
 				CFF3C6E923F0C385003D1D66 /* Person.swift in Sources */,
-				CFBC9CC023EE7086002855F5 /* ContentView.swift in Sources */,
+				CFBC9CC023EE7086002855F5 /* Main.swift in Sources */,
+				CFF3C6F823F0DEF3003D1D66 /* SummaryView.swift in Sources */,
+				CFF3C6F623F0DECA003D1D66 /* ExpensesView.swift in Sources */,
 				CFF3C6EB23F0CB6F003D1D66 /* Plan.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,7 +433,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.javiercueto.BalancedEx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -406,7 +454,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.javiercueto.BalancedEx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
