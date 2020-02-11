@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
          print(Realm.Configuration.defaultConfiguration.fileURL)
-        /*
+        
         let config = Realm.Configuration(
             // Set the new schema version. This must be greater than the previously used
             // version (if you've never set a schema version before, the version is 0).
@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
      
         
-        
+        /*
         let person = Person()
         person.name = "javier3"
         person.createdAt = Date()
@@ -50,28 +50,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         expense.idPerson = person
         expense.createdAt = Date()
        
-        
-        let plan = Plan()
-        plan.name = "Guadalajara"
+        */
+       
+       /* let plan = Plan()
+        plan.name = "Colima Boda"
         plan.createdAt = Date()
         
         
         do{
             let realm = try Realm()
+            
+            
+            
             try realm.write {
-                realm.add(person)
-                realm.add(expense)
+                //realm.add(person)
+               // realm.add(expense)
                 realm.add(plan)
-                plan.expenses.append(expense)
+             //   plan.expenses.append(expense)
             }
+
             
         }catch{
             print("error con Realm \(error)")
         }
         
-       
+     
+       */
         ////////////////////////////////////////
-        */
+        
         
         return true
     }

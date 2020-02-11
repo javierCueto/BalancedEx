@@ -9,8 +9,31 @@
 import SwiftUI
 
 struct PlanView: View {
+    @ObservedObject var planList = PlanViewModel()
+    
     var body: some View {
-        Text("Este es la lista de planes generales")
+        NavigationView {
+            
+            List(planList.planList,id: \.self){
+                      data in
+                
+                NavigationLink(destination: DetailView(name: data.name)){
+                                Text(data.name)
+                                                       .font(.title)
+                                                       .foregroundColor(.gray)
+                }
+             
+                          
+            }.navigationBarTitle("Planes")
+            //.navigationBarTitle(Text("Navigation Views"))
+            //.edgesIgnoringSafeArea(.top)
+        }
+    }
+}
+struct DetailView:View {
+    let name: String
+    var body: some View{
+        Text("\(name)")
     }
 }
 

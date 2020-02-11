@@ -14,6 +14,7 @@
 		CFBC9CC223EE7087002855F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFBC9CC123EE7087002855F5 /* Assets.xcassets */; };
 		CFBC9CC523EE7087002855F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFBC9CC423EE7087002855F5 /* Preview Assets.xcassets */; };
 		CFBC9CC823EE7087002855F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFBC9CC623EE7087002855F5 /* LaunchScreen.storyboard */; };
+		CFF117DC23F2636F00FAE610 /* PlanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF117DB23F2636F00FAE610 /* PlanViewModel.swift */; };
 		CFF3C6E923F0C385003D1D66 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3C6E823F0C385003D1D66 /* Person.swift */; };
 		CFF3C6EB23F0CB6F003D1D66 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3C6EA23F0CB6F003D1D66 /* Plan.swift */; };
 		CFF3C6ED23F0CB85003D1D66 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3C6EC23F0CB85003D1D66 /* Expense.swift */; };
@@ -35,6 +36,7 @@
 		CFBC9CC423EE7087002855F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CFBC9CC723EE7087002855F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFBC9CC923EE7087002855F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFF117DB23F2636F00FAE610 /* PlanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewModel.swift; sourceTree = "<group>"; };
 		CFF3C6E823F0C385003D1D66 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		CFF3C6EA23F0CB6F003D1D66 /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
 		CFF3C6EC23F0CB85003D1D66 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		CFBC9CBA23EE7086002855F5 /* BalancedEx */ = {
 			isa = PBXGroup;
 			children = (
+				CFF117DA23F2631600FAE610 /* ViewModel */,
 				CFF3C6EE23F0D6C0003D1D66 /* View */,
 				CFF3C6E723F0C32A003D1D66 /* Model */,
 				CFBC9CBB23EE7086002855F5 /* AppDelegate.swift */,
@@ -113,6 +116,14 @@
 				CFBC9CC423EE7087002855F5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CFF117DA23F2631600FAE610 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CFF117DB23F2636F00FAE610 /* PlanViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		CFF3C6E723F0C32A003D1D66 /* Model */ = {
@@ -244,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFF3C6ED23F0CB85003D1D66 /* Expense.swift in Sources */,
+				CFF117DC23F2636F00FAE610 /* PlanViewModel.swift in Sources */,
 				CFBC9CBC23EE7086002855F5 /* AppDelegate.swift in Sources */,
 				CFF3C6F223F0DB25003D1D66 /* PlanView.swift in Sources */,
 				CFF3C6F423F0DE2A003D1D66 /* People.swift in Sources */,
