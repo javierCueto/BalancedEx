@@ -13,6 +13,7 @@ import RealmSwift
 class Plan: Object {
     @objc dynamic var id: String = UUID().uuidString
     @objc dynamic var name: String = ""
+    @objc dynamic var descriptionPlan: String = ""
     @objc dynamic var status: String = ""
     @objc dynamic var createdAt : Date?
     @objc dynamic var deletedAt : Date?

@@ -17,7 +17,9 @@ class PlanViewModel : ObservableObject{
     
     init (){
         self.planList = realm.objects(Plan.self)
-        print(planList)
+        
+        
+
     }
     
 }

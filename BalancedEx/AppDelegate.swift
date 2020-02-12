@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let config = Realm.Configuration(
             // Set the new schema version. This must be greater than the previously used
             // version (if you've never set a schema version before, the version is 0).
-            schemaVersion: 2,
+            schemaVersion: 3,
 
             // Set the block which will be called automatically when opening a Realm with
             // a schema version lower than the one set above
@@ -35,50 +35,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // Tell Realm to use this new configuration object for the default Realm
         Realm.Configuration.defaultConfiguration = config
-        // cmd + shif + g = to show the url /Users/jjcueto/Library/Developer/CoreSimulator/Devices/586D248F-B2ED-47EC-BE58-66780B388996/data/Containers/Data/Application/9D2F7B73-B1F2-4919-B893-A7772AEC0664/Documents/default.realm
-        
-     
-        
-        /*
-        let person = Person()
-        person.name = "javier3"
-        person.createdAt = Date()
-        
-        let expense = Expense()
-        expense.concept = "refresco"
-        expense.total = 12.00
-        expense.idPerson = person
-        expense.createdAt = Date()
-       
-        */
-       
-       /* let plan = Plan()
-        plan.name = "Colima Boda"
-        plan.createdAt = Date()
-        
-        
-        do{
-            let realm = try Realm()
-            
-            
-            
-            try realm.write {
-                //realm.add(person)
-               // realm.add(expense)
-                realm.add(plan)
-             //   plan.expenses.append(expense)
-            }
 
-            
-        }catch{
-            print("error con Realm \(error)")
-        }
-        
-     
-       */
-        ////////////////////////////////////////
-        
-        
+
         return true
     }
     

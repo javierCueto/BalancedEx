@@ -10,24 +10,32 @@ import SwiftUI
 
 struct PlanView: View {
     @ObservedObject var planList = PlanViewModel()
-    
+    @State var needRefresh: Bool = false
     var body: some View {
         NavigationView {
             
-            List(planList.planList,id: \.self){
-                      data in
-                
+            List(planList.planList,id: \.self){ data in
                 NavigationLink(destination: DetailView(name: data.name)){
-                                Text(data.name)
-                                                       .font(.title)
-                                                       .foregroundColor(.gray)
+                    Text(data.name)
+                        .font(.title)
+                        .foregroundColor(.gray)
                 }
              
                           
             }.navigationBarTitle("Planes")
-            //.navigationBarTitle(Text("Navigation Views"))
-            //.edgesIgnoringSafeArea(.top)
+            .navigationBarItems(
+             trailing:
+                NavigationLink(destination: PlanNewView() ){
+                    HStack{
+                        Image(systemName: "plus")
+                        Text("Nuevo")
+                    }.accentColor(.yellow)
+                }
+
+                    
+            )
         }
+
     }
 }
 struct DetailView:View {
