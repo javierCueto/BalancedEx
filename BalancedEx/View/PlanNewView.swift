@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct PlanNewView: View {
+   // @Binding var isPresented1: Bool
     @State private var newPlan = ""
     @State private var newPlanDescription = ""
     @Environment(\.presentationMode) var presentationMode
@@ -29,13 +30,14 @@ struct PlanNewView: View {
                 
         
                 Button(action: {
-                    //self.data.append(Todo(action: self.newToDo))
-                                //self.newToDo = ""
+     
                     let _ = PlanNewViewModel(name: self.newPlan, descripcion: self.newPlanDescription )
                     self.newPlan = ""
                     self.newPlanDescription = ""
-                    
+       
                     self.presentationMode.wrappedValue.dismiss()
+                    
+                 
 
                 }) {
                     HStack{
@@ -58,3 +60,4 @@ struct PlanNewView_Previews: PreviewProvider {
         PlanNewView()
     }
 }
+

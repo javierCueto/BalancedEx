@@ -9,17 +9,20 @@
 import Foundation
 import RealmSwift
 
+
+
 class PlanViewModel : ObservableObject{
     
-    @Published var planList:Results<Plan>
+    @Published var planList:[Plan]
     let realm = try! Realm()
     
     
     init (){
-        self.planList = realm.objects(Plan.self)
-        
-        
-
+        self.planList = Array(realm.objects(Plan.self))
+    }
+    
+    func loadData(){
+         self.planList = Array(realm.objects(Plan.self))
     }
     
 }
