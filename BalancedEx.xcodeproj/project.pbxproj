@@ -10,6 +10,10 @@
 		17C90167A5F52B5E426A35E2 /* libPods-BalancedEx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A68661798838A57C9EC3F2EC /* libPods-BalancedEx.a */; };
 		CF22FF1F23F3A49700249E31 /* PlanNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF22FF1E23F3A49700249E31 /* PlanNewView.swift */; };
 		CF3F805823F8E05D00C17B42 /* PlanDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3F805723F8E05D00C17B42 /* PlanDetailView.swift */; };
+		CF42676323F99F56009A1AA7 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42676223F99F56009A1AA7 /* PersonView.swift */; };
+		CF42676523F9A07A009A1AA7 /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42676423F9A07A009A1AA7 /* PersonViewModel.swift */; };
+		CF42676723F9A389009A1AA7 /* PersonNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42676623F9A389009A1AA7 /* PersonNewView.swift */; };
+		CF42676923F9A4B0009A1AA7 /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42676823F9A4B0009A1AA7 /* PersonDetailView.swift */; };
 		CFBC9CBC23EE7086002855F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBC9CBB23EE7086002855F5 /* AppDelegate.swift */; };
 		CFBC9CBE23EE7086002855F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBC9CBD23EE7086002855F5 /* SceneDelegate.swift */; };
 		CFBC9CC023EE7086002855F5 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBC9CBF23EE7086002855F5 /* Main.swift */; };
@@ -21,7 +25,6 @@
 		CFF3C6EB23F0CB6F003D1D66 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3C6EA23F0CB6F003D1D66 /* Plan.swift */; };
 		CFF3C6ED23F0CB85003D1D66 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3C6EC23F0CB85003D1D66 /* Expense.swift */; };
 		CFF3C6F223F0DB25003D1D66 /* PlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3C6F123F0DB25003D1D66 /* PlanView.swift */; };
-		CFF3C6F423F0DE2A003D1D66 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3C6F323F0DE2A003D1D66 /* People.swift */; };
 		CFF3C6F623F0DECA003D1D66 /* ExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3C6F523F0DECA003D1D66 /* ExpensesView.swift */; };
 		CFF3C6F823F0DEF3003D1D66 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3C6F723F0DEF3003D1D66 /* SummaryView.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +35,10 @@
 		CF22FF1E23F3A49700249E31 /* PlanNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanNewView.swift; sourceTree = "<group>"; };
 		CF38ACC523F10CCA00B9B177 /* Pods_BalancedEx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_BalancedEx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF3F805723F8E05D00C17B42 /* PlanDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDetailView.swift; sourceTree = "<group>"; };
+		CF42676223F99F56009A1AA7 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
+		CF42676423F9A07A009A1AA7 /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
+		CF42676623F9A389009A1AA7 /* PersonNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonNewView.swift; sourceTree = "<group>"; };
+		CF42676823F9A4B0009A1AA7 /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
 		CFBC9CB823EE7086002855F5 /* BalancedEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalancedEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFBC9CBB23EE7086002855F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFBC9CBD23EE7086002855F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +52,6 @@
 		CFF3C6EA23F0CB6F003D1D66 /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
 		CFF3C6EC23F0CB85003D1D66 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		CFF3C6F123F0DB25003D1D66 /* PlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanView.swift; sourceTree = "<group>"; };
-		CFF3C6F323F0DE2A003D1D66 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		CFF3C6F523F0DECA003D1D66 /* ExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesView.swift; sourceTree = "<group>"; };
 		CFF3C6F723F0DEF3003D1D66 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
 		D732D09E810A1404DBA60138 /* Pods-BalancedEx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalancedEx.release.xcconfig"; path = "Target Support Files/Pods-BalancedEx/Pods-BalancedEx.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,11 +85,32 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
-		CF3F805923F8E06400C17B42 /* Plan */ = {
+		CF42676B23F9A867009A1AA7 /* Plan */ = {
 			isa = PBXGroup;
 			children = (
+				CF22FF1E23F3A49700249E31 /* PlanNewView.swift */,
+				CF3F805723F8E05D00C17B42 /* PlanDetailView.swift */,
+				CFF3C6F123F0DB25003D1D66 /* PlanView.swift */,
 			);
 			path = Plan;
+			sourceTree = "<group>";
+		};
+		CF42676C23F9A88A009A1AA7 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				CF42676223F99F56009A1AA7 /* PersonView.swift */,
+				CF42676623F9A389009A1AA7 /* PersonNewView.swift */,
+				CF42676823F9A4B0009A1AA7 /* PersonDetailView.swift */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		CF42676D23F9A8AB009A1AA7 /* Expenses */ = {
+			isa = PBXGroup;
+			children = (
+				CFF3C6F523F0DECA003D1D66 /* ExpensesView.swift */,
+			);
+			path = Expenses;
 			sourceTree = "<group>";
 		};
 		CFBC9CAF23EE7086002855F5 = {
@@ -133,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				CFF117DB23F2636F00FAE610 /* PlanViewModel.swift */,
+				CF42676423F9A07A009A1AA7 /* PersonViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -150,14 +178,11 @@
 		CFF3C6EE23F0D6C0003D1D66 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CF3F805923F8E06400C17B42 /* Plan */,
-				CFF3C6F123F0DB25003D1D66 /* PlanView.swift */,
-				CF3F805723F8E05D00C17B42 /* PlanDetailView.swift */,
+				CF42676B23F9A867009A1AA7 /* Plan */,
+				CF42676C23F9A88A009A1AA7 /* Person */,
 				CFBC9CBF23EE7086002855F5 /* Main.swift */,
-				CFF3C6F323F0DE2A003D1D66 /* People.swift */,
-				CFF3C6F523F0DECA003D1D66 /* ExpensesView.swift */,
+				CF42676D23F9A8AB009A1AA7 /* Expenses */,
 				CFF3C6F723F0DEF3003D1D66 /* SummaryView.swift */,
-				CF22FF1E23F3A49700249E31 /* PlanNewView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -272,13 +297,16 @@
 				CFF117DC23F2636F00FAE610 /* PlanViewModel.swift in Sources */,
 				CFBC9CBC23EE7086002855F5 /* AppDelegate.swift in Sources */,
 				CFF3C6F223F0DB25003D1D66 /* PlanView.swift in Sources */,
-				CFF3C6F423F0DE2A003D1D66 /* People.swift in Sources */,
 				CFBC9CBE23EE7086002855F5 /* SceneDelegate.swift in Sources */,
+				CF42676723F9A389009A1AA7 /* PersonNewView.swift in Sources */,
+				CF42676923F9A4B0009A1AA7 /* PersonDetailView.swift in Sources */,
 				CFF3C6E923F0C385003D1D66 /* Person.swift in Sources */,
 				CFBC9CC023EE7086002855F5 /* Main.swift in Sources */,
 				CF22FF1F23F3A49700249E31 /* PlanNewView.swift in Sources */,
+				CF42676323F99F56009A1AA7 /* PersonView.swift in Sources */,
 				CFF3C6F823F0DEF3003D1D66 /* SummaryView.swift in Sources */,
 				CFF3C6F623F0DECA003D1D66 /* ExpensesView.swift in Sources */,
+				CF42676523F9A07A009A1AA7 /* PersonViewModel.swift in Sources */,
 				CF3F805823F8E05D00C17B42 /* PlanDetailView.swift in Sources */,
 				CFF3C6EB23F0CB6F003D1D66 /* Plan.swift in Sources */,
 			);

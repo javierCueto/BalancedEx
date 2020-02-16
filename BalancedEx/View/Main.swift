@@ -21,7 +21,7 @@ struct MainView: View {
                 Text("Planes")
             }.tag(1)
             // Second Screen
-            PeopleView()
+            PersonView()
                 .tabItem {
                     Image(systemName: "person")
                     Text("Personas")

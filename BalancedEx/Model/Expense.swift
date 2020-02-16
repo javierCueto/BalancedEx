@@ -9,6 +9,7 @@
 import Foundation
 import RealmSwift
 
+
 class Expense: Object {
     @objc dynamic var id: String = UUID().uuidString
     @objc dynamic var concept: String = ""
@@ -21,5 +22,10 @@ class Expense: Object {
     
     override static func primaryKey() -> String? {
         return "id"
+    }
+    
+    var dateText: String {
+             dateFormatter.dateFormat = "MMM d yyyy, h:mm a"
+              return dateFormatter.string(from: createdAt ?? Date())
     }
 }

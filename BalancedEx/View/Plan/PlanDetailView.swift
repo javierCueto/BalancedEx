@@ -29,9 +29,8 @@ struct PlanDetailView: View {
                     self.presentationMode.wrappedValue.dismiss()
                 }){
                     Text("Default")
-                    .padding() .background(
-                    RoundedRectangle(cornerRadius: 10) .stroke(Color.yellow, lineWidth: 2))
-                }
+                    .padding()
+                }.foregroundColor(Color.white) .background(Color.yellow) .cornerRadius(8)
             }
             .padding()
             Spacer()
@@ -42,11 +41,3 @@ struct PlanDetailView: View {
         
     }
 }
-
-/*
-struct PlanDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        PlanDetailView()
-    }
-}
-*/

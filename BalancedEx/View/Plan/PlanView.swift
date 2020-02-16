@@ -8,7 +8,16 @@
 
 import SwiftUI
 
+
+
+
 struct PlanView: View {
+    
+    init() {
+        UITableView.appearance().separatorStyle = .none
+    }
+    
+    
    @ObservedObject var planList = PlanViewModel()
     @State var needRefresh: Bool = false
     @State var isPresented1: Bool = false
@@ -20,7 +29,6 @@ struct PlanView: View {
         NavigationView {
             
             List{
-                
              
                 ForEach(0..<planList.planList.count ,id: \.self){ index in
                     NavigationLink(destination: PlanDetailView(planList: self.planList , find: index) ){
@@ -31,9 +39,10 @@ struct PlanView: View {
                             
                             Text(self.planList.planList[index].dateText)
                                 .font(.footnote)
+                            
               
-                        }.foregroundColor(self.planList.planList[index].status == "Default" ?  Color.yellow : Color.gray  )
-                    }
+                        }
+                    }.listRowBackground(self.planList.planList[index].status == "Default" ?  Color.yellow : Color.clear)
                 }
                 .onDelete(perform: planList.deleteItems)
 

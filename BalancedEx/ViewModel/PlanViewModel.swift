@@ -15,13 +15,13 @@ class PlanViewModel : ObservableObject{
     
     @Published var planList:Results<Plan>
     let realm = try! Realm()
-    // var notificationToken: NotificationToken? = nil
+    var notificationToken: NotificationToken? = nil
 
     
     //fix double init with loadData
     init (){
         self.planList = self.realm.objects(Plan.self).sorted(byKeyPath: "createdAt", ascending: false)
-        
+        loadToken()
     }
 
     func loadData() {
@@ -41,7 +41,6 @@ class PlanViewModel : ObservableObject{
        }catch{
            print("error con Realm \(error)")
        }
-        loadData()
     }
     
     
@@ -53,9 +52,7 @@ class PlanViewModel : ObservableObject{
             
             do{
                 try self.realm.write {
-                    self.realm.delete(self.planList[index])
-                    self.loadData()
-                    
+                    self.realm.delete(self.planList[index])   
                 }
             }catch let error as NSError {
                 print("error - \(error.localizedDescription)")
@@ -65,26 +62,43 @@ class PlanViewModel : ObservableObject{
     }
     
     
+    func setDefault(planDefault :Plan) {
+        do{
+            for plan in planList {
+                
+                if plan.id == planDefault.id{
+                    try self.realm.write {
+                        planDefault.status = "Default"
+                    }
+                }else{
+                    try self.realm.write {
+                        plan.status = ""
+                    }
+                }
+            
+            }
+             
+        }catch let error as NSError {
+            print("error - \(error.localizedDescription)")
+        }
+        
+    }
+       
+    
+    
 
 
-    /*
+    
   func loadToken() {
-
-        // Observe Results Notifications
         notificationToken = planList.observe { [weak self] (changes: RealmCollectionChange) in
             switch changes {
             case .initial:
                 print("todos los datos cargaron")
-                // Results are now populated and can be accessed without blocking the UI
-               // tableView.reloadData()
-            case .update(_, let deletions, let insertions, let modifications):
+            case .update:
                 //
-                
-             
                 self?.loadData()
-                print("los datos se eliminaron")
+                print("algo paso con los plan")
             case .error(let error):
-                // An error occurred while opening the Realm file on the background worker thread
                 fatalError("\(error)")
             }
         }
@@ -92,10 +106,6 @@ class PlanViewModel : ObservableObject{
 
     deinit {
         notificationToken?.invalidate()
-    }*/
-       
-            
-   
-    
-    
+    }
+
 }

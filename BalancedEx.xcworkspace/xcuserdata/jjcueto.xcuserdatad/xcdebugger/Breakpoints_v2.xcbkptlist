@@ -30,10 +30,8 @@
             filePath = "BalancedEx/ViewModel/PlanViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
-            landmarkName = "PlanViewModel"
-            landmarkType = "3">
+            startingLineNumber = "112"
+            endingLineNumber = "112">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -46,8 +44,8 @@
             filePath = "BalancedEx/View/PlanView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
             landmarkName = "PlanView"
             landmarkType = "14">
             <Locations>
@@ -292,8 +290,8 @@
             filePath = "BalancedEx/View/PlanView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "11"
-            endingLineNumber = "11"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
             landmarkName = "PlanView"
             landmarkType = "14">
          </BreakpointContent>
@@ -312,54 +310,6 @@
             endingLineNumber = "28"
             landmarkName = "loadData()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0B8A7654-F829-40BB-A785-B6BD0FB59F97"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BalancedEx/View/PlanNewView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "PlanNewView"
-            landmarkType = "14">
-            <Locations>
-               <Location
-                  uuid = "0B8A7654-F829-40BB-A785-B6BD0FB59F97 - 6d70696f77f7df62"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BalancedEx.PlanNewView.init(planList: BalancedEx.PlanViewModel, presentationMode: SwiftUI.Environment&lt;SwiftUI.Binding&lt;SwiftUI.PresentationMode&gt;&gt;) -&gt; BalancedEx.PlanNewView"
-                  moduleName = "BalancedEx"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jjcueto/Documents/IOSApps/BalancedEx/BalancedEx/View/PlanNewView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "83">
-               </Location>
-               <Location
-                  uuid = "0B8A7654-F829-40BB-A785-B6BD0FB59F97 - 8abb395c70da5141"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BalancedEx.PlanNewView.init() -&gt; BalancedEx.PlanNewView"
-                  moduleName = "BalancedEx"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jjcueto/Documents/IOSApps/BalancedEx/BalancedEx/View/PlanNewView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "215">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -465,8 +415,8 @@
             filePath = "BalancedEx/ViewModel/PlanViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "PlanViewModel"
             landmarkType = "3">
          </BreakpointContent>
@@ -481,10 +431,10 @@
             filePath = "BalancedEx/ViewModel/PlanViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "PlanViewModel"
-            landmarkType = "3">
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "loadToken()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
