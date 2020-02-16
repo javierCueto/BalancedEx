@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct PlanNewView: View {
+    @ObservedObject var planList = PlanViewModel()
    // @Binding var isPresented1: Bool
     @State private var newPlan = ""
     @State private var newPlanDescription = ""
@@ -31,10 +32,9 @@ struct PlanNewView: View {
         
                 Button(action: {
      
-                    let _ = PlanNewViewModel(name: self.newPlan, descripcion: self.newPlanDescription )
+                    let _ = self.planList.newPlan(name: self.newPlan, descripcion: self.newPlanDescription )
                     self.newPlan = ""
                     self.newPlanDescription = ""
-       
                     self.presentationMode.wrappedValue.dismiss()
                     
                  

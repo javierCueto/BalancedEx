@@ -11,11 +11,33 @@ import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+   /*
+    func loadRealmData(){
+        // Get the default Realm
+        let realm = try! Realm()
 
+        // Query Realm for all dogs less than 2 years old
+        let planes = realm.objects(Plan.self)
+        print(planes.count) // => 0 because no dogs have been added to the Realm yet
+        
+        
+        let plan = realm.objects(Plan.self).first
+        
+        print(plan)
+        
+        // Delete an object with a transaction
+        try! realm.write {
+            realm.delete((plan!))
+        }
+        
+        
 
+    }
+
+*/
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-         print(Realm.Configuration.defaultConfiguration.fileURL)
+        // print(Realm.Configuration.defaultConfiguration.fileURL)
         
         let config = Realm.Configuration(
             // Set the new schema version. This must be greater than the previously used
@@ -36,7 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Tell Realm to use this new configuration object for the default Realm
         Realm.Configuration.defaultConfiguration = config
 
-
+       // loadRealmData()
         return true
     }
     

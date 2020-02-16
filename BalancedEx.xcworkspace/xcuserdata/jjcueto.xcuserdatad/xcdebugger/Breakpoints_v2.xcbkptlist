@@ -3,4 +3,489 @@
    uuid = "8FB0320E-A00A-4249-B5FB-165F22E58756"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3A0456CE-C4B5-42D0-9ED6-28793D7ABA03"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BalancedEx/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "30FED672-092C-4FB6-9372-D04E9E3060E4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BalancedEx/ViewModel/PlanViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "PlanViewModel"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D375E961-F5A9-4A4E-A34D-FA6EA59A1A10"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BalancedEx/View/PlanView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "PlanView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "D375E961-F5A9-4A4E-A34D-FA6EA59A1A10 - 4492c6c51963df3e"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BalancedEx.PlanView.planList.getter : BalancedEx.PlanViewModel"
+                  moduleName = "BalancedEx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jjcueto/Documents/IOSApps/BalancedEx/BalancedEx/View/PlanView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "62">
+               </Location>
+               <Location
+                  uuid = "D375E961-F5A9-4A4E-A34D-FA6EA59A1A10 - 1078008df02d5f2a"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BalancedEx.PlanView.planList.setter : BalancedEx.PlanViewModel"
+                  moduleName = "BalancedEx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jjcueto/Documents/IOSApps/BalancedEx/BalancedEx/View/PlanView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "D375E961-F5A9-4A4E-A34D-FA6EA59A1A10 - b627ad6470248f39"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BalancedEx.PlanView.planList.modify : BalancedEx.PlanViewModel"
+                  moduleName = "BalancedEx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jjcueto/Documents/IOSApps/BalancedEx/BalancedEx/View/PlanView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "67">
+               </Location>
+               <Location
+                  uuid = "D375E961-F5A9-4A4E-A34D-FA6EA59A1A10 - 5a265cd18f57a701"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BalancedEx.PlanView.planList.modify : BalancedEx.PlanViewModel with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "BalancedEx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jjcueto/Documents/IOSApps/BalancedEx/BalancedEx/View/PlanView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  uuid = "D375E961-F5A9-4A4E-A34D-FA6EA59A1A10 - 754feeca745d9076"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BalancedEx.PlanView.$planList.getter : SwiftUI.ObservedObject&lt;BalancedEx.PlanViewModel&gt;.Wrapper"
+                  moduleName = "BalancedEx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jjcueto/Documents/IOSApps/BalancedEx/BalancedEx/View/PlanView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "D375E961-F5A9-4A4E-A34D-FA6EA59A1A10 - e31721c7c8abf5bf"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BalancedEx.PlanView.init(planList: BalancedEx.PlanViewModel, needRefresh: Swift.Bool, isPresented1: Swift.Bool, isPresented2: Swift.Bool) -&gt; BalancedEx.PlanView"
+                  moduleName = "BalancedEx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jjcueto/Documents/IOSApps/BalancedEx/BalancedEx/View/PlanView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "29">
+               </Location>
+               <Location
+                  uuid = "D375E961-F5A9-4A4E-A34D-FA6EA59A1A10 - 8c4dd96fc958d376"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BalancedEx.PlanView.init() -&gt; BalancedEx.PlanView"
+                  moduleName = "BalancedEx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jjcueto/Documents/IOSApps/BalancedEx/BalancedEx/View/PlanView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "84912FE7-945F-422D-9800-FE0C04197FCF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BalancedEx/View/PlanNewView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "PlanNewView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "84912FE7-945F-422D-9800-FE0C04197FCF - 273afb267bebab70"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BalancedEx.PlanNewView.planList.getter : BalancedEx.PlanViewModel"
+                  moduleName = "BalancedEx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jjcueto/Documents/IOSApps/BalancedEx/BalancedEx/View/PlanNewView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "46">
+               </Location>
+               <Location
+                  uuid = "84912FE7-945F-422D-9800-FE0C04197FCF - 92f9a64420362b0c"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BalancedEx.PlanNewView.planList.setter : BalancedEx.PlanViewModel"
+                  moduleName = "BalancedEx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jjcueto/Documents/IOSApps/BalancedEx/BalancedEx/View/PlanNewView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "84912FE7-945F-422D-9800-FE0C04197FCF - f45e22fde05bbb7b"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BalancedEx.PlanNewView.planList.modify : BalancedEx.PlanViewModel"
+                  moduleName = "BalancedEx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jjcueto/Documents/IOSApps/BalancedEx/BalancedEx/View/PlanNewView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  uuid = "84912FE7-945F-422D-9800-FE0C04197FCF - aa3c393387dbb18c"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BalancedEx.PlanNewView.planList.modify : BalancedEx.PlanViewModel with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "BalancedEx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jjcueto/Documents/IOSApps/BalancedEx/BalancedEx/View/PlanNewView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "84912FE7-945F-422D-9800-FE0C04197FCF - a871dfcb985f3d4"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BalancedEx.PlanNewView.$planList.getter : SwiftUI.ObservedObject&lt;BalancedEx.PlanViewModel&gt;.Wrapper"
+                  moduleName = "BalancedEx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jjcueto/Documents/IOSApps/BalancedEx/BalancedEx/View/PlanNewView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "84912FE7-945F-422D-9800-FE0C04197FCF - 6d70696f77f7df62"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BalancedEx.PlanNewView.init(planList: BalancedEx.PlanViewModel, presentationMode: SwiftUI.Environment&lt;SwiftUI.Binding&lt;SwiftUI.PresentationMode&gt;&gt;) -&gt; BalancedEx.PlanNewView"
+                  moduleName = "BalancedEx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jjcueto/Documents/IOSApps/BalancedEx/BalancedEx/View/PlanNewView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  uuid = "84912FE7-945F-422D-9800-FE0C04197FCF - 8abb395c70da5141"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BalancedEx.PlanNewView.init() -&gt; BalancedEx.PlanNewView"
+                  moduleName = "BalancedEx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jjcueto/Documents/IOSApps/BalancedEx/BalancedEx/View/PlanNewView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5DA83707-3B16-4E4B-8CD2-40A0D629B6FC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BalancedEx/View/PlanView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "PlanView"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9B6CCD01-DF17-4F7D-91C3-80B6934AE1A1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BalancedEx/ViewModel/PlanViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "loadData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0B8A7654-F829-40BB-A785-B6BD0FB59F97"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BalancedEx/View/PlanNewView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "PlanNewView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "0B8A7654-F829-40BB-A785-B6BD0FB59F97 - 6d70696f77f7df62"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BalancedEx.PlanNewView.init(planList: BalancedEx.PlanViewModel, presentationMode: SwiftUI.Environment&lt;SwiftUI.Binding&lt;SwiftUI.PresentationMode&gt;&gt;) -&gt; BalancedEx.PlanNewView"
+                  moduleName = "BalancedEx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jjcueto/Documents/IOSApps/BalancedEx/BalancedEx/View/PlanNewView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "83">
+               </Location>
+               <Location
+                  uuid = "0B8A7654-F829-40BB-A785-B6BD0FB59F97 - 8abb395c70da5141"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BalancedEx.PlanNewView.init() -&gt; BalancedEx.PlanNewView"
+                  moduleName = "BalancedEx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jjcueto/Documents/IOSApps/BalancedEx/BalancedEx/View/PlanNewView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "215">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4AB2D3D5-A904-4383-AB4A-B0221956FDE7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BalancedEx/ViewModel/PlanViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "PlanViewModel"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "4AB2D3D5-A904-4383-AB4A-B0221956FDE7 - 3eee55e33cd06905"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BalancedEx.PlanViewModel.planList.getter : RealmSwift.Results&lt;BalancedEx.Plan&gt;"
+                  moduleName = "BalancedEx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jjcueto/Documents/IOSApps/BalancedEx/BalancedEx/ViewModel/PlanViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "4AB2D3D5-A904-4383-AB4A-B0221956FDE7 - a5cf09bb1b896d39"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BalancedEx.PlanViewModel.planList.setter : RealmSwift.Results&lt;BalancedEx.Plan&gt;"
+                  moduleName = "BalancedEx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jjcueto/Documents/IOSApps/BalancedEx/BalancedEx/ViewModel/PlanViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "130">
+               </Location>
+               <Location
+                  uuid = "4AB2D3D5-A904-4383-AB4A-B0221956FDE7 - 2cea8939dfd3808"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BalancedEx.PlanViewModel.planList.modify : RealmSwift.Results&lt;BalancedEx.Plan&gt;"
+                  moduleName = "BalancedEx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jjcueto/Documents/IOSApps/BalancedEx/BalancedEx/ViewModel/PlanViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "4AB2D3D5-A904-4383-AB4A-B0221956FDE7 - 9c5fdd668ae54371"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BalancedEx.PlanViewModel.planList.modify : RealmSwift.Results&lt;BalancedEx.Plan&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "BalancedEx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jjcueto/Documents/IOSApps/BalancedEx/BalancedEx/ViewModel/PlanViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  uuid = "4AB2D3D5-A904-4383-AB4A-B0221956FDE7 - 529107915a2602a9"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BalancedEx.PlanViewModel.$planList.getter : Combine.Published&lt;RealmSwift.Results&lt;BalancedEx.Plan&gt;&gt;.Publisher"
+                  moduleName = "BalancedEx"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jjcueto/Documents/IOSApps/BalancedEx/BalancedEx/ViewModel/PlanViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "115">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "88BCA3C2-B731-4CB4-BF73-32154469D86F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BalancedEx/ViewModel/PlanViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "PlanViewModel"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2EB9ABC2-75D0-40C7-8562-49184FEEFBC8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BalancedEx/ViewModel/PlanViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "PlanViewModel"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
