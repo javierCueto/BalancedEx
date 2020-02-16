@@ -23,17 +23,16 @@ struct PlanView: View {
                 
              
                 ForEach(0..<planList.planList.count ,id: \.self){ index in
-                    NavigationLink(destination: DetailView(name: String(self.planList.planList[index].name) )){
+                    NavigationLink(destination: PlanDetailView(planList: self.planList , find: index) ){
                         VStack(alignment: .leading){
                             Text(self.planList.planList[index].name)
                             .font(.title)
-                            .foregroundColor(.gray)
+                    
                             
-                            Text("\(self.planList.planList[index].dateText)")
+                            Text(self.planList.planList[index].dateText)
                                 .font(.footnote)
-                            .foregroundColor(.gray)
-                        }
-                        
+              
+                        }.foregroundColor(self.planList.planList[index].status == "Default" ?  Color.yellow : Color.gray  )
                     }
                 }
                 .onDelete(perform: planList.deleteItems)
@@ -46,14 +45,15 @@ struct PlanView: View {
                         self.isPresented1.toggle()
                        
                     }) {
-                        Image(systemName: "plus")
-                        Text("Nuevo")
-                        
+                        HStack{
+                            Image(systemName: "plus")
+                        }.padding(6)
+                        .background(
+                        RoundedRectangle(cornerRadius: 6) .stroke(Color.yellow, lineWidth: 2))
+                       
                     }.sheet(isPresented: $isPresented1
                     ) {
-                       // userData: self.userData
                         PlanNewView(planList: self.planList)
-                            
                     }
                 )
             }
@@ -62,12 +62,9 @@ struct PlanView: View {
 }
 
 
-struct DetailView:View {
-    let name: String
-    var body: some View{
-        Text("\(name)")
-    }
-}
+//struct DetailView:View {
+
+//}
 
 struct PlanListView_Previews: PreviewProvider {
     static var previews: some View {

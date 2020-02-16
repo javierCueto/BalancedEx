@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		17C90167A5F52B5E426A35E2 /* libPods-BalancedEx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A68661798838A57C9EC3F2EC /* libPods-BalancedEx.a */; };
 		CF22FF1F23F3A49700249E31 /* PlanNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF22FF1E23F3A49700249E31 /* PlanNewView.swift */; };
+		CF3F805823F8E05D00C17B42 /* PlanDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3F805723F8E05D00C17B42 /* PlanDetailView.swift */; };
 		CFBC9CBC23EE7086002855F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBC9CBB23EE7086002855F5 /* AppDelegate.swift */; };
 		CFBC9CBE23EE7086002855F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBC9CBD23EE7086002855F5 /* SceneDelegate.swift */; };
 		CFBC9CC023EE7086002855F5 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBC9CBF23EE7086002855F5 /* Main.swift */; };
@@ -30,6 +31,7 @@
 		A68661798838A57C9EC3F2EC /* libPods-BalancedEx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BalancedEx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF22FF1E23F3A49700249E31 /* PlanNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanNewView.swift; sourceTree = "<group>"; };
 		CF38ACC523F10CCA00B9B177 /* Pods_BalancedEx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_BalancedEx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF3F805723F8E05D00C17B42 /* PlanDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDetailView.swift; sourceTree = "<group>"; };
 		CFBC9CB823EE7086002855F5 /* BalancedEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalancedEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFBC9CBB23EE7086002855F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFBC9CBD23EE7086002855F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,13 @@
 				CF38ACC523F10CCA00B9B177 /* Pods_BalancedEx.framework */,
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		CF3F805923F8E06400C17B42 /* Plan */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Plan;
 			sourceTree = "<group>";
 		};
 		CFBC9CAF23EE7086002855F5 = {
@@ -141,7 +150,9 @@
 		CFF3C6EE23F0D6C0003D1D66 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CF3F805923F8E06400C17B42 /* Plan */,
 				CFF3C6F123F0DB25003D1D66 /* PlanView.swift */,
+				CF3F805723F8E05D00C17B42 /* PlanDetailView.swift */,
 				CFBC9CBF23EE7086002855F5 /* Main.swift */,
 				CFF3C6F323F0DE2A003D1D66 /* People.swift */,
 				CFF3C6F523F0DECA003D1D66 /* ExpensesView.swift */,
@@ -268,6 +279,7 @@
 				CF22FF1F23F3A49700249E31 /* PlanNewView.swift in Sources */,
 				CFF3C6F823F0DEF3003D1D66 /* SummaryView.swift in Sources */,
 				CFF3C6F623F0DECA003D1D66 /* ExpensesView.swift in Sources */,
+				CF3F805823F8E05D00C17B42 /* PlanDetailView.swift in Sources */,
 				CFF3C6EB23F0CB6F003D1D66 /* Plan.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
