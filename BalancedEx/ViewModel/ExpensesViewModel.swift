@@ -1,5 +1,5 @@
 //
-//  PeopleViewModel.swift
+//  ExpensesViewModel.swift
 //  BalancedEx
 //
 //  Created by José Javier Cueto Mejía on 16/02/20.
@@ -8,34 +8,32 @@
 
 import Foundation
 import RealmSwift
-
-
-
-class PersonViewModel : ObservableObject{
+class ExpensesViewModel : ObservableObject{
     
-    @Published var personList:Results<Person>
+    @Published var expenses:Results<Expense>
     let realm = try! Realm()
     var notificationToken: NotificationToken? = nil
 
     
     //fix double init with loadData
     init (){
-        self.personList = self.realm.objects(Person.self).sorted(byKeyPath: "createdAt", ascending: false)
+        self.expenses = self.realm.objects(Expense.self).sorted(byKeyPath: "createdAt", ascending: false)
         loadToken()
     }
 
     func loadData() {
-        self.personList = self.realm.objects(Person.self).sorted(byKeyPath: "createdAt", ascending: false)
+        self.expenses = self.realm.objects(Expense.self).sorted(byKeyPath: "createdAt", ascending: false)
     }
     
     
-    func newPerson (name:String?){
-        let person = Person()
-        person.name = name ?? ""
-        
+    func newPerson (concept:String?, descriptionEx:String? , total:Double?){
+        let expense = Expense()
+        expense.concept = concept ?? ""
+        expense.descriptionExpense = descriptionEx ?? ""
+        expense.total = Float(total ?? 0.0) 
          do{
              try realm.write {
-                realm.add(person)
+                realm.add(expense)
             }
         }catch{
             print("error con Realm \(error)")
@@ -50,7 +48,7 @@ class PersonViewModel : ObservableObject{
            
            do{
                try self.realm.write {
-                   self.realm.delete(self.personList[index])
+                   self.realm.delete(self.expenses[index])
                }
            }catch let error as NSError {
                print("error - \(error.localizedDescription)")
@@ -59,14 +57,14 @@ class PersonViewModel : ObservableObject{
     
     
     func loadToken() {
-           notificationToken = personList.observe { [weak self] (changes: RealmCollectionChange) in
+           notificationToken = expenses.observe { [weak self] (changes: RealmCollectionChange) in
                switch changes {
                case .initial:
-                   print("Personas => Cargados")
+                   print("Gatos => Cargados")
                case .update:
                    //
                    self?.loadData()
-                   print("Personas => Movimiento")
+                   print("Gastos => Movimientos")
                case .error(let error):
                    fatalError("\(error)")
                }

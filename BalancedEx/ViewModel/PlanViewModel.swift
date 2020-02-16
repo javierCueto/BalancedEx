@@ -93,11 +93,11 @@ class PlanViewModel : ObservableObject{
         notificationToken = planList.observe { [weak self] (changes: RealmCollectionChange) in
             switch changes {
             case .initial:
-                print("todos los datos cargaron")
+                print("Plan => Cargados")
             case .update:
                 //
                 self?.loadData()
-                print("algo paso con los plan")
+                print("Plan => Movimiento")
             case .error(let error):
                 fatalError("\(error)")
             }

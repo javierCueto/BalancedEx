@@ -9,13 +9,49 @@
 import SwiftUI
 
 struct ExpensesView: View {
+    init() {
+        UITableView.appearance().separatorStyle = .none
+    }
+       
+    @ObservedObject var expensesList = ExpensesViewModel()
+    @State var isPresented1: Bool = false
+        
     var body: some View {
-        Text("Pantalla de gastos")
+        NavigationView {
+        List{
+         
+           ForEach(0..<expensesList.expenses.count ,id: \.self){ index in
+              VStack(alignment: .leading){
+                  Text(self.expensesList.expenses[index].concept)
+                  .font(.title)
+                  
+                  Text("$ \(String(format: "%.2f", self.expensesList.expenses[index].total))")
+                      .font(.footnote)
+              }
+            }
+            
+        }.navigationBarTitle("Gastos")
+        .navigationBarItems(
+             trailing:
+                Button(action: {
+                    self.isPresented1.toggle()
+                   
+                }) {
+                    HStack{
+                        Image(systemName: "gift")
+                    }.padding(7)
+                   
+                }.sheet(isPresented: $isPresented1
+                ) {
+                    ExpensesNewView(expensesList: self.expensesList)
+                }
+            )
+        }
     }
 }
 
-struct ExpensesView_Previews: PreviewProvider {
-    static var previews: some View {
-        ExpensesView()
-    }
-}
+
+
+
+
+
