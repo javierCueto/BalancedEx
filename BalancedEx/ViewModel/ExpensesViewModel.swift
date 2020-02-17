@@ -72,7 +72,7 @@ class ExpensesViewModel : ObservableObject{
                case .initial:
                    print("Gatos => Cargados")
                case .update:
-                   //
+                    
                    self?.loadData()
                    print("Gastos => Movimientos")
                case .error(let error):

@@ -11,7 +11,9 @@ import SwiftUI
 struct SummaryView: View {
     @ObservedObject var summary = SummaryViewModel()
     var body: some View {
-        Text("$ \(self.summary.totalExpenses)")
+        Text("$ \(self.summary.totalExpenses)").onAppear(perform: {
+            self.summary.loadData()
+        })
 
     }
 }

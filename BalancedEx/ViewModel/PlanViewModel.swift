@@ -95,7 +95,7 @@ class PlanViewModel : ObservableObject{
             case .initial:
                 print("Plan => Cargados")
             case .update:
-                //
+              
                 self?.loadData()
                 print("Plan => Movimiento")
             case .error(let error):

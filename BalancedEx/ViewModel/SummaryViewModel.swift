@@ -13,39 +13,14 @@ import RealmSwift
 
 class SummaryViewModel : ObservableObject{
     @Published var totalExpenses: String = "$ 0.0"
-    @Published var expenses:Results<Expense>?
-   //let realm = try! Realm()
-    var notificationToken: NotificationToken? = nil
 
-    init (){
-        loadData()
-        loadToken()
-    }
     
     func loadData(){
+         print("entrooooooooo")
         let total:Float = RealmDB.realm.objects(Expense.self).filter("idPlan.status == 'Default'").sum(ofProperty: "total")
         self.totalExpenses = String(format:"%.2f", total)
     }
     
     
-    func loadToken() {
-        print("entrooooooooo")
-        notificationToken = expenses?.observe { [weak self] (changes: RealmCollectionChange) in
-                switch changes {
-                case .initial:
-                    print("Gatos => Cargados")
-                case .update:
-                    //
-                    self?.loadData()
-                    print("Gastos => Movimientos")
-                case .error(let error):
-                    fatalError("\(error)")
-                }
-            }
-        }
-
-        deinit {
-            notificationToken?.invalidate()
-        }
         
 }
