@@ -22,11 +22,15 @@ struct ExpensesView: View {
          
            ForEach(0..<expensesList.expenses.count ,id: \.self){ index in
               VStack(alignment: .leading){
-                  Text(self.expensesList.expenses[index].concept)
+                Text(self.expensesList.expenses[index].concept)
                   .font(.title)
                   
                   Text("$ \(String(format: "%.2f", self.expensesList.expenses[index].total))")
                       .font(.footnote)
+                
+                Text("\( self.expensesList.expenses[index].idPerson?.name ?? "?????")")
+                    
+                .font(.footnote)
               }
             }
             

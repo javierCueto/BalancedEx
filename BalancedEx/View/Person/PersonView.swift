@@ -13,7 +13,7 @@ struct PersonView: View {
          UITableView.appearance().separatorStyle = .none
      }
     
-    @ObservedObject var person = PersonViewModel()
+   // @ObservedObject var person = PersonViewModel.personList
     @State var isPresented1: Bool = false
      
      
@@ -23,10 +23,10 @@ struct PersonView: View {
              
              List{
               
-                ForEach(0..<person.personList.count ,id: \.self){ index in
-                     NavigationLink(destination: PersonDetailView(personList: self.person , find: index) ){
+                ForEach(0..<PersonViewModel.personList.count ,id: \.self){ index in
+                    NavigationLink(destination: PersonDetailView( find: index) ){
                          VStack(alignment: .leading){
-                             Text(self.person.personList[index].name)
+                            Text(PersonViewModel.personList[index].name)
                              .font(.title)
                          }
                      }
@@ -48,7 +48,7 @@ struct PersonView: View {
                         
                      }.sheet(isPresented: $isPresented1
                      ) {
-                         PersonNewView(personList: self.person)
+                         PersonNewView()
                      }
                  )
              }

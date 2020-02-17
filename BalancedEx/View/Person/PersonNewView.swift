@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct PersonNewView: View {
-    @ObservedObject var personList = PersonViewModel()
+    @State private var personList = PersonViewModel()
     @State private var newPerson = ""
     @Environment(\.presentationMode) var presentationMode
     var body: some View {

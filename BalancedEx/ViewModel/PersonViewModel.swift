@@ -13,19 +13,16 @@ import RealmSwift
 
 class PersonViewModel : ObservableObject{
     
-    @Published var personList:Results<Person>
+    static var personList:Results<Person> = RealmDB.realm.objects(Person.self).sorted(byKeyPath: "createdAt", ascending: false)
+   
     let realm = try! Realm()
     var notificationToken: NotificationToken? = nil
 
     
-    //fix double init with loadData
-    init (){
-        self.personList = self.realm.objects(Person.self).sorted(byKeyPath: "createdAt", ascending: false)
-        loadToken()
-    }
+  
 
     func loadData() {
-        self.personList = self.realm.objects(Person.self).sorted(byKeyPath: "createdAt", ascending: false)
+        PersonViewModel.personList = RealmDB.realm.objects(Person.self).sorted(byKeyPath: "createdAt", ascending: false)
     }
     
     
@@ -49,8 +46,8 @@ class PersonViewModel : ObservableObject{
                else {return}
            
            do{
-               try self.realm.write {
-                   self.realm.delete(self.personList[index])
+               try RealmDB.realm.write {
+                RealmDB.realm.delete(PersonViewModel.personList[index])
                }
            }catch let error as NSError {
                print("error - \(error.localizedDescription)")
@@ -58,8 +55,9 @@ class PersonViewModel : ObservableObject{
     }
     
     
+    /*
     func loadToken() {
-           notificationToken = personList.observe { [weak self] (changes: RealmCollectionChange) in
+        notificationToken = PersonViewModel.personList.observe { [weak self] (changes: RealmCollectionChange) in
                switch changes {
                case .initial:
                    print("Personas => Cargados")
@@ -77,5 +75,5 @@ class PersonViewModel : ObservableObject{
            notificationToken?.invalidate()
        }
        
-    
+    */
 }

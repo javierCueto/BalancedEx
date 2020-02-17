@@ -13,6 +13,7 @@ import RealmSwift
 class Person: Object {
     @objc dynamic var id: String = UUID().uuidString
     @objc dynamic var name: String = ""
+    @objc dynamic var status: Bool = true
     @objc dynamic var createdAt : Date?
     @objc dynamic var deletedAt : Date?
     

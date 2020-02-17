@@ -16,6 +16,8 @@
 		CF42676923F9A4B0009A1AA7 /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42676823F9A4B0009A1AA7 /* PersonDetailView.swift */; };
 		CF42676F23F9A9AC009A1AA7 /* ExpensesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42676E23F9A9AC009A1AA7 /* ExpensesViewModel.swift */; };
 		CF42677123F9B024009A1AA7 /* ExpensesNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42677023F9B024009A1AA7 /* ExpensesNewView.swift */; };
+		CF6EEA0F23FA1F540086760F /* RealmDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6EEA0E23FA1F540086760F /* RealmDB.swift */; };
+		CF6EEA1123FA3D9E0086760F /* SummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6EEA1023FA3D9E0086760F /* SummaryViewModel.swift */; };
 		CFBC9CBC23EE7086002855F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBC9CBB23EE7086002855F5 /* AppDelegate.swift */; };
 		CFBC9CBE23EE7086002855F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBC9CBD23EE7086002855F5 /* SceneDelegate.swift */; };
 		CFBC9CC023EE7086002855F5 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBC9CBF23EE7086002855F5 /* Main.swift */; };
@@ -43,6 +45,8 @@
 		CF42676823F9A4B0009A1AA7 /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
 		CF42676E23F9A9AC009A1AA7 /* ExpensesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewModel.swift; sourceTree = "<group>"; };
 		CF42677023F9B024009A1AA7 /* ExpensesNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesNewView.swift; sourceTree = "<group>"; };
+		CF6EEA0E23FA1F540086760F /* RealmDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDB.swift; sourceTree = "<group>"; };
+		CF6EEA1023FA3D9E0086760F /* SummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewModel.swift; sourceTree = "<group>"; };
 		CFBC9CB823EE7086002855F5 /* BalancedEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalancedEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFBC9CBB23EE7086002855F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFBC9CBD23EE7086002855F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +171,7 @@
 				CFF117DB23F2636F00FAE610 /* PlanViewModel.swift */,
 				CF42676423F9A07A009A1AA7 /* PersonViewModel.swift */,
 				CF42676E23F9A9AC009A1AA7 /* ExpensesViewModel.swift */,
+				CF6EEA1023FA3D9E0086760F /* SummaryViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 				CFF3C6E823F0C385003D1D66 /* Person.swift */,
 				CFF3C6EA23F0CB6F003D1D66 /* Plan.swift */,
 				CFF3C6EC23F0CB85003D1D66 /* Expense.swift */,
+				CF6EEA0E23FA1F540086760F /* RealmDB.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -310,7 +316,9 @@
 				CFF3C6E923F0C385003D1D66 /* Person.swift in Sources */,
 				CFBC9CC023EE7086002855F5 /* Main.swift in Sources */,
 				CF22FF1F23F3A49700249E31 /* PlanNewView.swift in Sources */,
+				CF6EEA0F23FA1F540086760F /* RealmDB.swift in Sources */,
 				CF42676323F99F56009A1AA7 /* PersonView.swift in Sources */,
+				CF6EEA1123FA3D9E0086760F /* SummaryViewModel.swift in Sources */,
 				CF42676F23F9A9AC009A1AA7 /* ExpensesViewModel.swift in Sources */,
 				CFF3C6F823F0DEF3003D1D66 /* SummaryView.swift in Sources */,
 				CFF3C6F623F0DECA003D1D66 /* ExpensesView.swift in Sources */,

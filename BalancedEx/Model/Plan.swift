@@ -20,7 +20,7 @@ class Plan: Object {
     @objc dynamic var status: String = ""
     @objc dynamic var createdAt : Date?
     @objc dynamic var deletedAt : Date?
-    let expenses = List<Expense>()
+   // let expenses = List<Expense>()
     
     var dateText: String {
            dateFormatter.dateFormat = "MMM d yyyy, h:mm a"

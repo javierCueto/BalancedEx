@@ -17,27 +17,37 @@ class ExpensesViewModel : ObservableObject{
     
     //fix double init with loadData
     init (){
-        self.expenses = self.realm.objects(Expense.self).sorted(byKeyPath: "createdAt", ascending: false)
+        self.expenses = self.realm.objects(Expense.self).sorted(byKeyPath: "createdAt", ascending: false).filter("idPlan.status == 'Default'")
         loadToken()
     }
 
     func loadData() {
-        self.expenses = self.realm.objects(Expense.self).sorted(byKeyPath: "createdAt", ascending: false)
+        self.expenses = self.realm.objects(Expense.self).sorted(byKeyPath: "createdAt", ascending: false).filter("idPlan.status == 'Default'")
     }
     
     
-    func newPerson (concept:String?, descriptionEx:String? , total:Double?){
+    func newPerson (concept:String?, descriptionEx:String? , total:Double?, person:Person ) -> Bool{
         let expense = Expense()
-        expense.concept = concept ?? ""
-        expense.descriptionExpense = descriptionEx ?? ""
-        expense.total = Float(total ?? 0.0) 
-         do{
-             try realm.write {
-                realm.add(expense)
+        let person = person
+        if let plan = realm.objects(Plan.self).filter("status == 'Default'").first {
+            expense.concept = concept ?? ""
+            expense.descriptionExpense = descriptionEx ?? ""
+            expense.total = Float(total ?? 0.0)
+            expense.idPerson = person
+            expense.idPlan = plan
+             
+            do{
+                  try realm.write {
+                     realm.add(expense)
+                    // plan.expenses.append(expense)
+                 }
+            }catch{
+                 print("error con Realm \(error)")
             }
-        }catch{
-            print("error con Realm \(error)")
+            return false
         }
+        return true
+     
      }
      
     

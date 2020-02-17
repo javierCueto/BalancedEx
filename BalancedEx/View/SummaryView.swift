@@ -9,13 +9,10 @@
 import SwiftUI
 
 struct SummaryView: View {
+    @ObservedObject var summary = SummaryViewModel()
     var body: some View {
-        Text("Pantalla de totales")
+        Text("$ \(self.summary.totalExpenses)")
+
     }
 }
 
-struct SummaryView_Previews: PreviewProvider {
-    static var previews: some View {
-        SummaryView()
-    }
-}

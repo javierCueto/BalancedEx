@@ -17,8 +17,10 @@ struct ExpensesNewView: View {
     @Environment(\.presentationMode) var presentationMode
     @State private var keyboardUp = false
     private var keyboardHeight: CGFloat { 270 }
-    @State private var youTuberName = "Mark"
-    var youTubers = ["Sean", "Chris", "Mark", "Scott", "Paul"]
+    @State private var idUser = 0
+    @State private var showingAlert = false
+   // @State private var persons = PersonViewModel()
+    //var youTubers = ["Sean", "Chris", "Mark", "Scott", "Paul"]
     var body: some View {
         
         ZStack{
@@ -33,10 +35,10 @@ struct ExpensesNewView: View {
             
             VStack(){
                 VStack{
-                    Picker(selection: self.$youTuberName, label: Text(""))
+                    Picker(selection: self.$idUser, label: Text(""))
                      {
-                         ForEach(self.youTubers, id: \.self) { name in
-                                 Row(name: name)
+                         ForEach(0..<PersonViewModel.personList.count ,id: \.self){ index in
+                                 Row(find: index)
                          }
                      }.labelsHidden()
                      .padding() .background(RoundedRectangle(cornerRadius: 15) .stroke(Color.yellow, lineWidth: 1))
@@ -50,8 +52,8 @@ struct ExpensesNewView: View {
                          
                          TextField("0", text: self.$total , onEditingChanged: {
                              self.keyboardUp = $0
-                            self.totalDouble = Double(self.total) ?? 0.0
-                                print( self.totalDouble)
+               
+                                print( self.total)
                          })
                              .textFieldStyle(RoundedBorderTextFieldStyle())
                              .multilineTextAlignment(.leading)
@@ -64,13 +66,22 @@ struct ExpensesNewView: View {
                      }.padding()
                                     
                      Button(action: {
-                        let _ = self.expensesList.newPerson(concept: self.concept, descriptionEx: self.descriptionExpense, total: self.totalDouble)
-                       
-                         self.presentationMode.wrappedValue.dismiss()
+                        self.totalDouble = Double(self.total) ?? 0.0
+                        self.showingAlert = self.expensesList.newPerson(concept: self.concept, descriptionEx: self.descriptionExpense, total: self.totalDouble ,person : PersonViewModel.personList[self.idUser] )
+                        //print(self.youTuberName)
+                        if !self.showingAlert {
+                            self.presentationMode.wrappedValue.dismiss()
+                        }
+                        
                      }) {
                              Text("Guardar")
                                 
                      }  .padding() .foregroundColor(Color.white) .background(Color.yellow) .cornerRadius(8)
+                    .alert(isPresented: $showingAlert) {
+                        Alert(title: Text("Mensaje"), message: Text("Seleccione un plan por default"), dismissButton: .default(Text("Entendido")) {
+                             self.presentationMode.wrappedValue.dismiss()
+                            } )
+                    }
                      
                     
                 }.offset(y: keyboardUp ? -keyboardHeight : 0)
@@ -89,12 +100,12 @@ struct ExpensesNewView: View {
 
 
 struct Row : View {
-    var name: String
+    var find: Int
     var body: some View {
         HStack {
             Image(systemName: "person.fill")
-            Text(name)
-        }.tag(name)
+            Text(PersonViewModel.personList[find].name)
+        }.tag(find)
 
     }
         

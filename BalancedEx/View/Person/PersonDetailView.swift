@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct PersonDetailView: View {
-    @State var personList = PersonViewModel()
+   // @State var personList = PersonViewModel()
     @State var find: Int
     @Environment(\.presentationMode) var presentationMode
     var body: some View{
@@ -25,7 +25,7 @@ struct PersonDetailView: View {
 
             Spacer()
             .shadow(color: .gray, radius: 10)
-        }.navigationBarTitle(personList.personList[find].name)
+        }.navigationBarTitle(PersonViewModel.personList[find].name)
     
         
         
