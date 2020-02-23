@@ -18,6 +18,8 @@
 		CF42677123F9B024009A1AA7 /* ExpensesNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42677023F9B024009A1AA7 /* ExpensesNewView.swift */; };
 		CF6EEA0F23FA1F540086760F /* RealmDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6EEA0E23FA1F540086760F /* RealmDB.swift */; };
 		CF6EEA1123FA3D9E0086760F /* SummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6EEA1023FA3D9E0086760F /* SummaryViewModel.swift */; };
+		CFAE78AA2402D78000DF884A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFAE78A92402D78000DF884A /* Colors.xcassets */; };
+		CFAE78AC2402FCD900DF884A /* PersonExpense.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE78AB2402FCD900DF884A /* PersonExpense.swift */; };
 		CFBC9CBC23EE7086002855F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBC9CBB23EE7086002855F5 /* AppDelegate.swift */; };
 		CFBC9CBE23EE7086002855F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBC9CBD23EE7086002855F5 /* SceneDelegate.swift */; };
 		CFBC9CC023EE7086002855F5 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBC9CBF23EE7086002855F5 /* Main.swift */; };
@@ -47,6 +49,8 @@
 		CF42677023F9B024009A1AA7 /* ExpensesNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesNewView.swift; sourceTree = "<group>"; };
 		CF6EEA0E23FA1F540086760F /* RealmDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDB.swift; sourceTree = "<group>"; };
 		CF6EEA1023FA3D9E0086760F /* SummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewModel.swift; sourceTree = "<group>"; };
+		CFAE78A92402D78000DF884A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		CFAE78AB2402FCD900DF884A /* PersonExpense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonExpense.swift; sourceTree = "<group>"; };
 		CFBC9CB823EE7086002855F5 /* BalancedEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalancedEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFBC9CBB23EE7086002855F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFBC9CBD23EE7086002855F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +126,31 @@
 			path = Expenses;
 			sourceTree = "<group>";
 		};
+		CFAE78A62402D74700DF884A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CFAE78A82402D76C00DF884A /* Colors */,
+				CFAE78A72402D76200DF884A /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CFAE78A72402D76200DF884A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CFBC9CC123EE7087002855F5 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		CFAE78A82402D76C00DF884A /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				CFAE78A92402D78000DF884A /* Colors.xcassets */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
 		CFBC9CAF23EE7086002855F5 = {
 			isa = PBXGroup;
 			children = (
@@ -144,12 +173,12 @@
 		CFBC9CBA23EE7086002855F5 /* BalancedEx */ = {
 			isa = PBXGroup;
 			children = (
+				CFAE78A62402D74700DF884A /* Resources */,
 				CFF117DA23F2631600FAE610 /* ViewModel */,
 				CFF3C6EE23F0D6C0003D1D66 /* View */,
 				CFF3C6E723F0C32A003D1D66 /* Model */,
 				CFBC9CBB23EE7086002855F5 /* AppDelegate.swift */,
 				CFBC9CBD23EE7086002855F5 /* SceneDelegate.swift */,
-				CFBC9CC123EE7087002855F5 /* Assets.xcassets */,
 				CFBC9CC623EE7087002855F5 /* LaunchScreen.storyboard */,
 				CFBC9CC923EE7087002855F5 /* Info.plist */,
 				CFBC9CC323EE7087002855F5 /* Preview Content */,
@@ -172,6 +201,7 @@
 				CF42676423F9A07A009A1AA7 /* PersonViewModel.swift */,
 				CF42676E23F9A9AC009A1AA7 /* ExpensesViewModel.swift */,
 				CF6EEA1023FA3D9E0086760F /* SummaryViewModel.swift */,
+				CFAE78AB2402FCD900DF884A /* PersonExpense.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -268,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFBC9CC823EE7087002855F5 /* LaunchScreen.storyboard in Resources */,
+				CFAE78AA2402D78000DF884A /* Colors.xcassets in Resources */,
 				CFBC9CC523EE7087002855F5 /* Preview Assets.xcassets in Resources */,
 				CFBC9CC223EE7087002855F5 /* Assets.xcassets in Resources */,
 			);
@@ -307,6 +338,7 @@
 			files = (
 				CFF3C6ED23F0CB85003D1D66 /* Expense.swift in Sources */,
 				CFF117DC23F2636F00FAE610 /* PlanViewModel.swift in Sources */,
+				CFAE78AC2402FCD900DF884A /* PersonExpense.swift in Sources */,
 				CFBC9CBC23EE7086002855F5 /* AppDelegate.swift in Sources */,
 				CFF3C6F223F0DB25003D1D66 /* PlanView.swift in Sources */,
 				CFBC9CBE23EE7086002855F5 /* SceneDelegate.swift in Sources */,

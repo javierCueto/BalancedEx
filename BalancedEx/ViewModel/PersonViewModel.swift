@@ -23,6 +23,7 @@ class PersonViewModel : ObservableObject{
 
     func loadData() {
         PersonViewModel.personList = RealmDB.realm.objects(Person.self).sorted(byKeyPath: "createdAt", ascending: false)
+
     }
     
     

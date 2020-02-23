@@ -42,9 +42,11 @@ struct PlanView: View {
                             
               
                         }
-                    }.listRowBackground(self.planList.planList[index].status == "Default" ?  Color.yellow : Color.clear)
+                    }.listRowBackground(self.planList.planList[index].status == "Default" ?  Color.init("YellowColor") : Color.clear)
+                   
                 }
                 .onDelete(perform: planList.deleteItems)
+              
 
                 
             }.navigationBarTitle("Planes")
@@ -57,8 +59,6 @@ struct PlanView: View {
                         HStack{
                             Image(systemName: "plus")
                         }.padding(6)
-                        .background(
-                        RoundedRectangle(cornerRadius: 6) .stroke(Color.yellow, lineWidth: 2))
                        
                     }.sheet(isPresented: $isPresented1
                     ) {

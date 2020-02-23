@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct MainView: View {
-    @State private var selectedTab = 1
+    @State private var selectedTab = 4
     
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -40,8 +40,8 @@ struct MainView: View {
             }.tag(4)
             
         }
-        //.edgesIgnoringSafeArea(.top)
-        .accentColor(.yellow)
+        .foregroundColor(Color.init("GrayBlackColor"))
+        .accentColor(Color.init("YellowColor"))
     }
     
 }
