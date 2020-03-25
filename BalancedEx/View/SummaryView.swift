@@ -45,7 +45,7 @@ struct SummaryView: View {
             ScrollView(showsIndicators: false) {
                 VStack(spacing: 20){
                     ForEach(0..<summary.personExpenses.count ,id: \.self){ index in
-                        detailTotalPerson(find: index)
+                        detailTotalByPerson(find: index)
                     }
                
                 }
@@ -64,7 +64,7 @@ struct SummaryView: View {
 
 
 
-struct detailTotalPerson: View {
+struct detailTotalByPerson: View {
       var summary = SummaryViewModel()
     @State var find: Int
     var body: some View {

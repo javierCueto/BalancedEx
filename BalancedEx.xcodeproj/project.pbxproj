@@ -51,7 +51,7 @@
 		CF6EEA1023FA3D9E0086760F /* SummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewModel.swift; sourceTree = "<group>"; };
 		CFAE78A92402D78000DF884A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		CFAE78AB2402FCD900DF884A /* PersonExpense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonExpense.swift; sourceTree = "<group>"; };
-		CFBC9CB823EE7086002855F5 /* BalancedEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalancedEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFBC9CB823EE7086002855F5 /* SharedEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharedEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFBC9CBB23EE7086002855F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFBC9CBD23EE7086002855F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CFBC9CBF23EE7086002855F5 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
@@ -165,7 +165,7 @@
 		CFBC9CB923EE7086002855F5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CFBC9CB823EE7086002855F5 /* BalancedEx.app */,
+				CFBC9CB823EE7086002855F5 /* SharedEx.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -256,7 +256,7 @@
 			);
 			name = BalancedEx;
 			productName = BalancedEx;
-			productReference = CFBC9CB823EE7086002855F5 /* BalancedEx.app */;
+			productReference = CFBC9CB823EE7086002855F5 /* SharedEx.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -503,7 +503,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.javiercueto.BalancedEx;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SharedEx;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -524,7 +524,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.javiercueto.BalancedEx;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SharedEx;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
