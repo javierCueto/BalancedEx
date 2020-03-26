@@ -43,8 +43,8 @@ struct PersonView: View {
                          HStack{
                              Image(systemName: "person.badge.plus.fill")
                          }.padding(7)
-                         .background(
-                         RoundedRectangle(cornerRadius: 6) .stroke(Color.yellow, lineWidth: 2))
+            
+                       
                         
                      }.sheet(isPresented: $isPresented1
                      ) {

@@ -20,7 +20,7 @@ struct PersonNewView: View {
                     .frame( maxWidth: .infinity)
                     .foregroundColor(.white)
                     .padding()
-                    .background(Color.yellow)
+                    .background(Color("YellowColor"))
                     
                 
                 Group {
@@ -37,9 +37,10 @@ struct PersonNewView: View {
                     self.presentationMode.wrappedValue.dismiss()
                 }) {
                         Text("Guardar")
-                            .padding()
-                } .foregroundColor(Color.white) .background(Color.yellow) .cornerRadius(8)
-                
+                        .frame(maxWidth: .infinity , maxHeight :40)
+                            
+                } .foregroundColor(Color.white).background(Color("YellowColor")) .cornerRadius(8)
+                .padding()
                 
                 Spacer()
             }

@@ -21,16 +21,18 @@ struct PlanDetailView: View {
             }
             .padding(.horizontal , 20)
             .padding(.vertical, 60)
-
-            .background(Color.yellow) //.cornerRadius(20)
+            .background(Color("YellowColor"))
+            
             VStack{
                 Button(action: {
                     self.planList.setDefault(planDefault: self.planList.planList[self.find])
                     self.presentationMode.wrappedValue.dismiss()
                 }){
                     Text("Default")
-                    .padding()
-                }.foregroundColor(Color.white) .background(Color.yellow) .cornerRadius(8)
+                    .frame(maxWidth: .infinity , maxHeight :40)
+                    
+                }.foregroundColor(Color.white) .background(Color("YellowColor")) .cornerRadius(8)
+
             }
             .padding()
             Spacer()

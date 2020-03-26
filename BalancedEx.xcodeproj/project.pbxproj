@@ -120,6 +120,7 @@
 		CF42676D23F9A8AB009A1AA7 /* Expenses */ = {
 			isa = PBXGroup;
 			children = (
+				CFF3C6F723F0DEF3003D1D66 /* SummaryView.swift */,
 				CFF3C6F523F0DECA003D1D66 /* ExpensesView.swift */,
 				CF42677023F9B024009A1AA7 /* ExpensesNewView.swift */,
 			);
@@ -224,7 +225,6 @@
 				CF42676C23F9A88A009A1AA7 /* Person */,
 				CFBC9CBF23EE7086002855F5 /* Main.swift */,
 				CF42676D23F9A8AB009A1AA7 /* Expenses */,
-				CFF3C6F723F0DEF3003D1D66 /* SummaryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";

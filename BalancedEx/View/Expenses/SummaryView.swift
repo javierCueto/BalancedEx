@@ -36,7 +36,7 @@ struct SummaryView: View {
             }
             .frame(maxWidth: .infinity)
             .padding()
-            .background(LinearGradient(gradient: Gradient(colors: [Color.init("GrayBlackColor"), Color.init("GrayBlackLowColor")]), startPoint: .top, endPoint: .bottomTrailing))
+            .background(LinearGradient(gradient: Gradient(colors: [Color.init("GrayBlackLowColor"), Color.init("GrayBlackLowColor")]), startPoint: .top, endPoint: .bottomTrailing))
             .foregroundColor(Color.init("WhiteColor"))
             .cornerRadius(10)
             .shadow(radius: 10, y: 10)
@@ -76,7 +76,7 @@ struct detailTotalByPerson: View {
                 .onAppear(perform: { self.summary.loadData()})
             }
             .font(.headline)
-            .foregroundColor(Color.init("GrayBlackColor"))
+            .foregroundColor(Color.init("GrayBlackLowColor"))
             HStack(){
                 Text("Total Gastado: ")
                  Text("$ \(String(format:"%.2f", summary.personExpenses[find].total ))")

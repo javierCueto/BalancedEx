@@ -21,16 +21,20 @@ struct PlanNewView: View {
                     .frame( maxWidth: .infinity)
                     .foregroundColor(.white)
                     .padding()
-                    .background(Color.yellow)
+                    .background(Color("YellowColor"))
                     
                 
                 Group {
                     TextField("Nuevo plan aqui", text: self.$newPlan)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .multilineTextAlignment(.leading)
+                    
+             
+
                     TextField("Descrición", text:  self.$newPlanDescription)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .multilineTextAlignment(.leading)
+        
                 }.padding()
                 
                 
@@ -42,8 +46,11 @@ struct PlanNewView: View {
                     self.presentationMode.wrappedValue.dismiss()
                 }) {
                         Text("Guardar")
-                            .padding()
-                } .foregroundColor(Color.white) .background(Color.yellow) .cornerRadius(8)
+                        .frame(maxWidth: .infinity , maxHeight :40)
+                        
+                } .foregroundColor(Color.white) .background(Color("YellowColor")) .cornerRadius(8)
+                .padding()
+                
                 
                 
                 Spacer()
@@ -51,6 +58,7 @@ struct PlanNewView: View {
             .frame(maxWidth: .infinity)
         }
         .edgesIgnoringSafeArea(.bottom)
+        
     }
 }
 

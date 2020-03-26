@@ -21,7 +21,7 @@ struct PersonDetailView: View {
             }
             .padding(.horizontal , 20)
             .padding(.vertical, 60)
-            .background(Color.yellow) 
+            .background(Color("YellowColor"))
 
             Spacer()
             .shadow(color: .gray, radius: 10)

@@ -19,7 +19,7 @@ struct ExpensesNewView: View {
     private var keyboardHeight: CGFloat { 270 }
     @State private var idUser = 0
     @State private var showingAlert = false
-   // @State private var persons = PersonViewModel()
+    // @State private var persons = PersonViewModel()
     //var youTubers = ["Sean", "Chris", "Mark", "Scott", "Paul"]
     var body: some View {
         
@@ -29,43 +29,43 @@ struct ExpensesNewView: View {
                     .frame( maxWidth: .infinity)
                     .foregroundColor(.white)
                     .padding()
-                    .background(Color.yellow)
+                    .background(Color("YellowColor"))
                 Spacer()
             }.zIndex(1)
             
             VStack(){
                 VStack{
                     Picker(selection: self.$idUser, label: Text(""))
-                     {
-                         ForEach(0..<PersonViewModel.personList.count ,id: \.self){ index in
-                                 Row(find: index)
-                         }
-                     }.labelsHidden()
-                     .padding() .background(RoundedRectangle(cornerRadius: 15) .stroke(Color.yellow, lineWidth: 1))
-                 
-                     Group {
-                         TextField("Concepto", text: self.$concept, onEditingChanged: {
-                             self.keyboardUp = $0
-                         })
-                             .textFieldStyle(RoundedBorderTextFieldStyle())
-                             .multilineTextAlignment(.leading)
-                         
-                         TextField("0", text: self.$total , onEditingChanged: {
-                             self.keyboardUp = $0
-               
-                                print( self.total)
-                         })
-                             .textFieldStyle(RoundedBorderTextFieldStyle())
-                             .multilineTextAlignment(.leading)
-                             .keyboardType(.numbersAndPunctuation)
-                         TextField("Descripcion", text: self.$descriptionExpense, onEditingChanged: {
-                             self.keyboardUp = $0
-                         })
-                         .textFieldStyle(RoundedBorderTextFieldStyle())
-                         .multilineTextAlignment(.leading)
-                     }.padding()
-                                    
-                     Button(action: {
+                    {
+                        ForEach(0..<PersonViewModel.personList.count ,id: \.self){ index in
+                            Row(find: index)
+                        }
+                    }.labelsHidden()
+                        .padding() .background(RoundedRectangle(cornerRadius: 15) .stroke(Color("YellowColor"), lineWidth: 1))
+                    
+                    Group {
+                        TextField("Concepto", text: self.$concept, onEditingChanged: {
+                            self.keyboardUp = $0
+                        })
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .multilineTextAlignment(.leading)
+                        
+                        TextField("0", text: self.$total , onEditingChanged: {
+                            self.keyboardUp = $0
+                            
+                            print( self.total)
+                        })
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .multilineTextAlignment(.leading)
+                            .keyboardType(.numbersAndPunctuation)
+                        TextField("Descripcion", text: self.$descriptionExpense, onEditingChanged: {
+                            self.keyboardUp = $0
+                        })
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .multilineTextAlignment(.leading)
+                    }.padding()
+                    
+                    Button(action: {
                         self.totalDouble = Double(self.total) ?? 0.0
                         self.showingAlert = self.expensesList.newPerson(concept: self.concept, descriptionEx: self.descriptionExpense, total: self.totalDouble ,person : PersonViewModel.personList[self.idUser] )
                         //print(self.youTuberName)
@@ -73,21 +73,21 @@ struct ExpensesNewView: View {
                             self.presentationMode.wrappedValue.dismiss()
                         }
                         
-                     }) {
-                             Text("Guardar")
-                                
-                     }  .padding() .foregroundColor(Color.white) .background(Color.yellow) .cornerRadius(8)
-                    .alert(isPresented: $showingAlert) {
-                        Alert(title: Text("Mensaje"), message: Text("Seleccione un plan por default"), dismissButton: .default(Text("Entendido")) {
-                             self.presentationMode.wrappedValue.dismiss()
-                            } )
+                    }) {
+                        Text("Guardar")
+                        .frame(maxWidth: .infinity , maxHeight :40)
+                    }  .padding() .foregroundColor(Color.white) .background(Color("YellowColor")) .cornerRadius(8)
+                        .alert(isPresented: $showingAlert) {
+                            Alert(title: Text("Mensaje"), message: Text("Seleccione un plan por default"), dismissButton: .default(Text("Entendido")) {
+                                self.presentationMode.wrappedValue.dismiss()
+                                } )
                     }
-                     
+                    
                     
                 }.offset(y: keyboardUp ? -keyboardHeight : 0)
-       
-                .animation(.easeIn)
                     
+                    .animation(.easeIn)
+                
                 Spacer()
             }
             .padding(.top , 80)
@@ -106,8 +106,8 @@ struct Row : View {
             Image(systemName: "person.fill")
             Text(PersonViewModel.personList[find].name)
         }.tag(find)
-
-    }
         
+    }
+    
 }
 
